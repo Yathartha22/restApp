@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
 		$query = mysqli_query($conn,"SELECT * FROM user WHERE username= '$user' AND password='$pass'");
 		$rows = mysqli_num_rows($query);
 		if($rows==1){
-			header("Location: welcome.php");
+			header("Location: index.php");
 		}
 		else{
 			echo "Username or password invalid";
