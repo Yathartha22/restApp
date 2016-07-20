@@ -6,8 +6,8 @@
 </head>
 <body>
      <div id="welcome">
-       <form action="menu.php" method="POST">
-       <label class="heading">Select your Option</label>
+       <form action="login.php" method="POST">
+       <label class="homepage">MENU</label>
        <input type="checkbox" name="check_list[]" value="100"><label>ChickenRice</label>       <label>Rs.100</label>
        <input type="checkbox" name="check_list[]" value="300"><label>Gulabjamun</label>        <label>Rs.300</label>
        <input type="checkbox" name="check_list[]" value="150"><label>Dal Makhani</label>        <label>Rs.150</label>
