@@ -1,14 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <title>MENU PAGE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="menu">
 <?php
 
 if(isset($_POST['submit'])){
 	if(!empty($_POST['check_list'])){
 		$checked_count= count($_POST['check_list']);
-	echo "You have selected    " .$checked_count. "items </br>";
+	 echo "You have selected " .$checked_count. " item(s) </br>";
 	$value=0;
 	foreach ($_POST['check_list'] as $selected) {
 		$value=$value+$selected;
 	  }
-		echo "<p>TOTAL AMOUNT IS" .$value. "</p>";
+		echo "<p>TOTAL AMOUNT IS " .$value. " </p>";
 	}
 }
 
@@ -26,3 +34,6 @@ if(isset($_POST['submit'])){
     $query3 = mysqli_query($conn,"UPDATE admins SET sales= '$ans' ");
 
 ?>
+</div>
+</body>
+</html>

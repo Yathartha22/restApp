@@ -8,9 +8,10 @@
       <div id="admin">
            <fieldset><legend>CHECK SALES</legend></fieldset>
            <form method="POST">
-           <input id="btn" type="submit" name="submit" value="Check Sales">
+           <input id="button" type="submit" name="submit" value="Check Sales">
            </form>
       </div>
+      <div id="show-sales">
       <?php 
       if (isset($_POST['submit'])) {
       	$conn =mysqli_connect("localhost","root",'');
@@ -22,5 +23,6 @@
         }
       }
       ?>
+      </div>
    </body>
 </html>

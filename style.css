@@ -17,8 +17,9 @@ body{
 }
 #welcome{
 	width:25%;
-	border-radius:5px;
+	
 	margin: 80px auto;
+	border-radius:5px;
 	background: white;
 	padding:5px;
  }
@@ -26,5 +27,50 @@ body{
  	font-size: 30px;
  	float:left;
  	color:blue;
+ 	margin-left: 30px;
+ 	margin-right: 50px;
+ 	padding: 9.5px ;
 
- }
+}
+input[type=checkbox]{
+	margin-bottom:25px;
+	margin-left: 50px;
+	margin-right:60px;
+	border:1px solid grey;
+	border-radius: 2px;
+
+}
+input[type=submit]{
+	margin-bottom: 25px;
+	margin-left: 50px;
+}
+#menu{
+	width:25%;
+	padding: 5px;
+	margin: 80px auto;
+	border:2px solid grey;
+	border-radius: 5px;
+}
+#admin{
+    width:25%;
+    border-radius: 5px;
+    margin: 80px auto;
+    background:white;
+    padding:5px;
+}
+#show-sales{
+	width:25%;
+    margin:80px auto;
+    padding: 5px;
+    border:2px solid blue;
+    border-radius: 1px; 
+}
+.homepage{
+	font-size: 30px;
+ 	float:left;
+ 	color:blue;
+ 	margin-left: 30px;
+ 	margin-right: 100px;
+ 	padding: 20px;
+
+}
