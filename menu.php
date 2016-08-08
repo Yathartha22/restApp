@@ -11,12 +11,19 @@
 if(isset($_POST['submit'])){
 	if(!empty($_POST['check_list'])){
 		$checked_count= count($_POST['check_list']);
-	 echo "You have selected " .$checked_count. " item(s) </br>";
-	$value=0;
-	foreach ($_POST['check_list'] as $selected) {
-		$value=$value+$selected;
-	  }
-		echo "<p>TOTAL AMOUNT IS " .$value. " </p>";
+      if($checked_count!=0)
+        {
+            echo "You have selected " .$checked_count. " item(s) </br>";
+        $value=0;
+        foreach ($_POST['check_list'] as $selected) {
+        $value=$value+$selected;
+        }
+        echo "<p>TOTAL AMOUNT IS " .$value. " </p>";
+        }
+       else
+       {
+	   echo "<script> alert('Don\'t Try To Fool'); window.location.href='http://localhost/project2/welcome.php'</script>";
+     }  
 	}
 }
 

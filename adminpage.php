@@ -6,10 +6,11 @@
 </head>
    <body>
       <div id="admin">
-           <fieldset><legend>CHECK SALES</legend></fieldset>
+           <fieldset><legend>CHECK SALES</legend>
            <form method="POST">
            <input id="button" type="submit" name="submit" value="Check Sales">
            </form>
+           </fieldset>
       </div>
       <div id="show-sales">
       <?php 
