@@ -11,7 +11,7 @@
       <h1 style="margin-top:-20px">RESTAPP</h1>
      </div>
        <ul>
-         <li><a href="http://localhost/project2/index.php">HOME</a></li>
+         <li><a href="index.php">HOME</a></li>
          <li class="menu"><a href="#">MENU</a>
          <div class="menu-content">
             <a href="#">Indian Cuisine</a>
@@ -24,7 +24,7 @@
        </ul>
      </div>
     <div id=login>
-     <li style="float:right;"><a class=signin href="http://localhost/project2/login.php">SIGN IN</a></li>
+     <li style="float:right;"><a class=signin href="login.php">SIGN IN</a></li>
      </div>
      
      <div id="frm">

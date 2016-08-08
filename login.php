@@ -11,7 +11,7 @@
      </div>
      <div id="nav">
        <ul>
-         <li><a href="http://localhost/project2/index.php">HOME</a></li>
+         <li><a href="index.php">HOME</a></li>
          <li class="menu"><a href="#">MENU</a>
          <div class="menu-content">
             <a href="#">Indian Cuisine</a>
@@ -31,7 +31,7 @@
        <div  style="font-family:arial; padding: 0px 10px;font-weight: bold;">Password <br><input type="password" placeholder="Password..." name="pass" id="pass"><br></div>
        <input id="button" type="submit" name="submit"
        value="Sign in">
-       <div class="signindown">NEW USER?? SIGN UP HERE<a style="margin:4px; color: grey;" href="http://localhost/project2/signup.php">SIGN UP</a></div>
+       <div class="signindown">NEW USER?? SIGN UP HERE<a style="margin:4px; color: grey;" href="signup.php">SIGN UP</a></div>
        </form>
     </div>
    

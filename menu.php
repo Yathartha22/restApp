@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
         }
        else
        {
-	   echo "<script> alert('Don\'t Try To Fool'); window.location.href='http://localhost/project2/welcome.php'</script>";
+	   echo "<script> alert('Don\'t Try To Fool'); window.location.href='welcome.php'</script>";
      }  
 	}
 }

@@ -3,7 +3,7 @@
  
  if (isset($_POST['submit'])) {
   	if (empty($_POST['user']) || (empty($_POST['pass']))) {
-  		echo "<script>alert('You Missed Something'); window.location.href='http://localhost/project2/signup.php'</script>";
+  		echo "<script>alert('You Missed Something'); window.location.href='signup.php'</script>";
   	}
   	else{
   		$user= $_POST['user'];
@@ -17,7 +17,7 @@
           	newuser();
           }
           else
-          	echo "<script>alert('You Are Already Registered'); window.location.href='http://localhost/project2/signup.php'</script>";
+          	echo "<script>alert('You Are Already Registered'); window.location.href='signup.php'</script>";
     }
   }
   function newuser()
@@ -29,6 +29,6 @@
   		$pass= $_POST['pass'];
   	    $query=mysqli_query($conn,"INSERT INTO user VALUES('$user','$pass','0')");
   	    if($query)
-  	     echo "<script>alert('Successfully Registered'); window.location.href='http://localhost/project2/welcome.php'</script>";
+  	     echo "<script>alert('Successfully Registered'); window.location.href='welcome.php'</script>";
   	    } 
  ?>

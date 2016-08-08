@@ -8,7 +8,7 @@
     <div id="big_wrapper">
      <div id="nav">
        <ul>
-         <li><a href="http://localhost/project2/index.php">HOME</a></li>
+         <li><a href="index.php">HOME</a></li>
          <li><a href="#">MENU</a></li>
          <li style="float:right"><a class="active1" href="#">ABOUT</a></li>
          <li><a href="#">BLOG</a></li>

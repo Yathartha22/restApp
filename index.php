@@ -14,7 +14,7 @@
 
      <div id="nav">
        <ul>
-         <li><a href="http://localhost/project2/index.php">HOME</a></li>
+         <li><a href="index.php">HOME</a></li>
          <li class="menu"><a href="#">MENU</a>
           <div class="menu-content fadee">
             <a href="#">Indian Cuisine</a>
@@ -54,10 +54,10 @@ function carousel() {
    
    
      <div id=sign>
-     <li style="float:right; margin-top: -300px;margin-right: -5px;"><a class=signup href="http://localhost/project2/signup.php">SIGN UP</a></li>
+     <li style="float:right; margin-top: -300px;margin-right: -5px;"><a class=signup href="signup.php">SIGN UP</a></li>
      </div>
      <div id=login>
-     <li style="float:right; margin-top:-360px; margin-right: -2px;"><a class=signin href="http://localhost/project2/login.php">SIGN IN</a></li>
+     <li style="float:right; margin-top:-360px; margin-right: -2px;"><a class=signin href="login.php">SIGN IN</a></li>
      </div>
 
     <div class="content">
