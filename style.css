@@ -174,14 +174,7 @@ input[type=submit]{
     margin-top: 20px;
 
 }
-.fade{
-	-webkit-animation: fading  10s infinite;
-	animation: fading  10s  infinite  ;
-}
-@keyframes fading{
-     0%{opacity:0}50%{opacity:1}100%{opacity:0} 
-     }
-@-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
 
 .footer{
 	text-align: center;
