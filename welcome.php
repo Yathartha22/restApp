@@ -1,19 +1,31 @@
 <!doctype html>
 <html>
 <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>Welcome</title>
+     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="style.css">
+     <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div id="big_wrapper">
-     <div id="nav">
-       <ul>
-         <li><a href="index.php">HOME</a></li>
-         <li><a href="#">MENU</a></li>
-         <li style="float:right"><a class="active1" href="#">ABOUT</a></li>
-         <li><a href="#">BLOG</a></li>
+      <div class="top-heading">
+       <h1 style="margin-top:10px; font-weight:bold;">REST<span style="color:grey">APP</span></h1>
+       </div>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+       <div>  
+       <ul class="nav navbar-nav">
+         <li><a style="font-weight: bold;" href="index.php">HOME</a></li>
+         <li><a style="font-weight: bold;" href="#">MENU</a></li>
+         <li style="float:right"><a style="font-weight: bold;" href="#">ABOUT</a></li>
+         <li><a style="font-weight: bold;" href="#">BLOG</a></li>
        </ul>
-     </div>
+       
+       </div>
+      </div>
+     </nav>
      
      <div id= "welcome">
      <fieldset class="group"><legend>Select your option</legend>
@@ -30,8 +42,11 @@
        <input  type="submit" name='submit' value="Submit">  
        </fieldset> 
        </div>
+       </form>
      </div>
-     </form>
+     
+     
+     
 
 </body>
 </html>

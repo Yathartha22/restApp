@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sign Up</title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+  
+  <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div id="big_wrapper">
-     <div id="nav">
-     <div class="top-heading">
-      <h1 style="margin-top:-20px">RESTAPP</h1>
-     </div>
-       <ul>
-         <li><a href="index.php">HOME</a></li>
-         <li class="menu"><a href="#">MENU</a>
-         <div class="menu-content">
-            <a href="#">Indian Cuisine</a>
-            <a href="#">South Indian Cuisine</a>
-            <a href="#">Italian Cuisine</a>
-          </div>
-          </li>
-         <li style="float:right"><a class="active1" href="#">ABOUT</a></li>
-         <li><a href="http://yaj22.wordpress.com">BLOG</a></li>
+        <div class="top-heading">
+       <h1 style="margin-top:10px; font-weight:bold;">REST<span style="color:grey">APP</span></h1>
+       </div>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+       <div>  
+       <ul class="nav navbar-nav">
+         <li><a style="font-weight: bold;" href="index.php">HOME</a></li>
+         <li><a style="font-weight: bold;" href="#">MENU</a></li>
+         <li style="float:right"><a style="font-weight: bold;" href="#">ABOUT</a></li>
+         <li><a style="font-weight: bold;" href="#">BLOG</a></li>
        </ul>
-     </div>
-    <div id=login>
-     <li style="float:right;"><a class=signin href="login.php">SIGN IN</a></li>
-     </div>
+       <ul class="nav navbar-nav navbar-right">
+         
+         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Log-in</a></li>
+       </ul>
+       </div>
+      </div>
+     </nav>
      
-     <div id="frm">
-       <fieldset><legend style="font-family: arial; font-weight: bold;">SIGN-UP</legend>
-       <form method="POST" action="process2.php">
-       <div style="font-family:arial; padding: 20px 10px;font-weight: bold;">Name <br><input type="text" placeholder="Username..." name="user" id="user"/><br></div>
-       <div style="font-family:arial;  padding:0 0 10px 10px;font-weight: bold;"> Password<br> <input type="password" placeholder="Password..." name="pass" id="pass"><br></div>
-       <div style="font-weight:bold;"><input id="button" type="submit" name="submit" value="Sign Up"></div>
-       </form>
-     </div>
+    <div class="form-style-8" style="margin-top:60px">
+  <h2>Sign Up</h2>
+  <form action="process2.php" method="POST">
+    <input type="text" name="user" id="user" placeholder="Full Name" required="" autofocus="" />
+    <input type="password" name="pass" id="pass" required="" placeholder="Password"/>
+    <input type="email" name="email" required="" placeholder="Email">
+    <input type="tel" name="number" required="" placeholder="Contact Number">
+    <input  id="submit" type="submit" name="submit" value="Sign Up">
+
+  </form>
+</div>
 </body>
 </html>
