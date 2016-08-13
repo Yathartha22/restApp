@@ -9,23 +9,10 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div id="big_wrapper">
-      <div class="top-heading">
-       <h1 style="margin-top:10px; font-weight:bold;">REST<span style="color:grey">APP</span></h1>
-       </div>
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-       <div>  
-       <ul class="nav navbar-nav">
-         <li><a style="font-weight: bold;" href="index.php">HOME</a></li>
-         <li><a style="font-weight: bold;" href="#">MENU</a></li>
-         <li style="float:right"><a style="font-weight: bold;" href="#">ABOUT</a></li>
-         <li><a style="font-weight: bold;" href="#">BLOG</a></li>
-       </ul>
-       
-       </div>
-      </div>
-     </nav>
+   <?php
+   include('functions.php');
+   nav2();
+   ?>
      
      <div id= "welcome">
      <fieldset class="group"><legend>Select your option</legend>

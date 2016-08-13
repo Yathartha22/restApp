@@ -17,7 +17,7 @@
           	newuser();
           }
           else
-          	echo "<script>alert('You Are Already Registered'); window.location.href='signup.php'</script>";
+          	echo "<script>alert('You Are Already Registered'); window.location.href='index.php'</script>";
     }
   }
   function newuser()

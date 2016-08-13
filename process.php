@@ -1,8 +1,8 @@
 <?php
 $error='';
 if (isset($_POST['submit'])) {
-	if(empty($_POST['user']) || empty($_POST['pass'])){
-		echo  "<script> alert('You Missed Something'); window.location.href='login.php'</script>";
+	if(empty($_POST['user']) && empty($_POST['pass'])){
+		echo  "<script> alert('You Missed Something'); window.location.href='index.php'</script>";
 	}
 	else{
 		$user = $_POST['user'];
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
         		header("Location: adminpage.php");
         	}
         	else{	 
-        		echo "<script> alert('Don\'t Try To Fool'); window.location.href='login.php'</script>";
+        		echo "<script> alert('Don\'t Try To Fool'); window.location.href='index.php'</script>";
         	}
         }
         else
@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
 		if($rows==1){
 			header("Location: welcome.php");
 		}
-		else echo "<script> alert('Wrong Credentials'); window.location.href='login.php'</script>";
+		else echo "<script> alert('Wrong Credentials'); window.location.href='index.php'</script>";
 		
 	   }
 	   mysqli_close($conn);

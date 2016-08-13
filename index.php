@@ -13,14 +13,32 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <script src="bootstrap/css/jquery.min.js"></script>
   <script src="bootstrap/css/bootstrap.min.js"></script>  -->
+    <style>
+  .modal-header, h4, .close {
+      background-color: grey;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: ;
+  }
+  </style>
+
 </head>
 
 <body>
    
  <div class="container-fluid">   
-  <?php include('functions.php') ;
+<?php include('functions.php') ;
    nav();
-  ?>
+?>
+<?php 
+login_modal();
+?>
+<?php
+signup_modal();
+?>
 
 <!--    
      <div class="slideshow">
@@ -49,7 +67,7 @@ function carousel() {
 </script>
 -->
 <div class="row">
- <div class="col-md-10 col-md-offset-1">
+ <div class="col-xs-10 col-xs-offset-1">
 <div class="slideshow">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
  
@@ -99,7 +117,8 @@ function carousel() {
 </div>
 
 
-    <footer>
+ 
+<footer>
       <div class="footer">
         <p>CopyRight@2016 RestApp</p>
       </div>
