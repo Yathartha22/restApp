@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!doctype html>
 <html>
 <head>
@@ -9,14 +12,20 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
+   
    <?php
    include('functions.php');
    nav2();
    ?>
-     
+    <div class="container-fluid">
+    <div class="row">
+     <div class="col-xs-0 col-md-10 col-lg-10 col-xs-offset-2 col-md-offset-5 col-lg-offset-5">
+      <div class="username"> <?php echo "Welcome "; echo $_SESSION['user']; ?></div>
+     </div>
+    
      <div id= "welcome">
      <fieldset class="group"><legend>Select your option</legend>
-       <form action="menu.php" method="POST">
+       <form action="menu.php" method="POST" id="frm">
        <div class="checkbox">
        <input type="checkbox" name="check_list[]" value="100"><label>ChickenRice</label><labell>Rs.100</labell>
        <input type="checkbox" name="check_list[]" value="300"><label>Gulabjamun</label><labell>Rs.300</labell>
@@ -30,8 +39,18 @@
        </fieldset> 
        </div>
        </form>
+       <script type="text/javascript">
+         "use strict";
+         document.getElementById('frm').addEventListener('submit', estimateTotal);
+
+         function estimateTotal(event){
+          event.preventDefault();
+         }
+       </script>
      </div>
-     
+     </div>
+      </div>
+
      
      
 

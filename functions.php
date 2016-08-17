@@ -9,6 +9,7 @@ function nav(){
  <div class="col-xs-10 col-xs-offset-1">
       <nav class="navbar navbar-inverse">
   <div class="container-fluid">
+  
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -27,8 +28,8 @@ function nav(){
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
-        <li><button type="button" class="btn btn-default btn-lg" style="background-color:#101010; font-weight: bold; border-color:#101010; color:grey;" id="myBtn">Login <span class="glyphicon glyphicon-log-in"></span></button></li>
-        <li><button type="button" class="btn btn-default btn-lg" style="background-color:#101010; font-weight: bold; border-color:#101010; color:grey;" id="myBtn2">Sign Up <span class="glyphicon glyphicon-user"></span></button></li>
+        <li><a style=" font-weight: bold;  color:grey;cursor:pointer;" id="myBtn">Login <span class="glyphicon glyphicon-log-in"></span></a></li>
+        <li><a style=" font-weight: bold;color:grey;cursor:pointer;" id="myBtn2">Sign Up <span class="glyphicon glyphicon-user"></span></a></li>
       </ul> 
     </div>
   </div>
@@ -41,7 +42,54 @@ function nav(){
 function nav2(){
 ?>
    <div class="row"> <div class="col-xs-10 col-xs-offset-1">
+
+  <!-- <h4 style="float:right; margin-right:240px;" >Hello</h4> -->
+       
        <h1 style="margin-top:-10px; font-weight:bold; font-family:verdana;">REST<span style="color:grey">APP</span></h1>
+
+</div>
+</div>  
+<div class="row">
+ <div class="col-xs-10 col-xs-offset-1">
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li style="font-weight:bold; font-style: tahoma;"><a href="index.php">HOME</a></li>
+        <li style="font-weight:bold; font-style: tahoma;"><a href="#">MENU</a></li>
+        <li style="font-weight:bold; font-style: tahoma;"><a href="http://yaj22.wordpress.com">BLOG</a></li>
+        <li style="font-weight:bold; font-style: tahoma;"><a href="#">ABOUT</a></li>
+
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+      <li><a class="logout" href="logout.php" style=" font-weight: bold;color:grey;cursor:pointer;">LOG OUT</a></li> 
+      </ul>
+      </div>
+    
+  </div>
+     
+   </nav> 
+   </div>
+   </div>
+<?php
+}
+function nav3(){
+?>
+  <div class="row"> <div class="col-xs-10 col-xs-offset-1">
+
+  <!-- <h4 style="float:right; margin-right:240px;" >Hello</h4> -->
+  
+       <h1 style="margin-top:-10px; font-weight:bold; font-family:verdana;">REST<span style="color:grey">APP</span></h1>
+
 </div>
 </div>  
 <div class="row">
@@ -71,6 +119,7 @@ function nav2(){
    </nav> 
    </div>
    </div>
+
 <?php
 }  
 function login_modal(){
@@ -94,7 +143,7 @@ function login_modal(){
           <form role="form" action="process.php" method="POST">
             <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-              <input type="text" class="form-control" name="user" id="usrname" placeholder="Enter email">
+              <input type="text" class="form-control" name="user" id="usrname" placeholder="Enter User Name" autofocus="">
             </div>
             <div class="form-group">
               <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
@@ -141,7 +190,7 @@ function signup_modal(){
           <form role="form" action="process2.php" method="POST">
             <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-              <input type="text" class="form-control" name="user" id="usrname" placeholder="Enter User Name">
+              <input type="text" class="form-control" name="user" id="usrname" placeholder="Enter User Name" autofocus="">
             </div>
             <div class="form-group">
               <label for="email"><span class="glyphicon glyphicon-envelope"></span> Email</label>

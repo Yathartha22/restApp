@@ -3,7 +3,7 @@
  
  if (isset($_POST['submit'])) {
   	if (empty($_POST['user']) || (empty($_POST['pass']))) {
-  		echo "<script>alert('You Missed Something'); window.location.href='signup.php'</script>";
+  		echo "<script>alert('You Missed Something'); window.location.href='index.php'</script>";
   	}
   	else{
   		$user= $_POST['user'];

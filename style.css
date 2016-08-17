@@ -14,6 +14,7 @@ body{
 	padding: 10px 10px;
 	margin-left: 60%;
 }
+
  
 #welcome{
 	width:45%;	
@@ -60,7 +61,9 @@ labell{
 	margin-left: 60px;
 	padding: 0px 20px 50px 10px;
 }
-
+ul li a:hover{
+	color: white;
+}
 /*input[type=text]{
      height: 22px;
      width: 100px;
@@ -260,4 +263,16 @@ input[type=password]{
     background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
     background-color:#34CACA;
 }
-
+  .modal-header, h4, .close {
+      background-color: grey;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: ;
+  }
+.username{
+	font-weight: bold;
+	color: grey;
+}

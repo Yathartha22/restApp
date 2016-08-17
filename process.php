@@ -1,12 +1,16 @@
 <?php
+session_start();
 $error='';
 if (isset($_POST['submit'])) {
-	if(empty($_POST['user']) && empty($_POST['pass'])){
+	if(empty($_POST['user']) || empty($_POST['pass'])){
 		echo  "<script> alert('You Missed Something'); window.location.href='index.php'</script>";
 	}
 	else{
 		$user = $_POST['user'];
 		$pass = $_POST['pass'];
+		$_SESSION['user']=$user;
+		$_SESSION['pass']=$pass;
+		
         if($user == "admin")
         {
         	$conn = mysqli_connect("localhost","root","");
@@ -27,6 +31,7 @@ if (isset($_POST['submit'])) {
 		$query = mysqli_query($conn,"SELECT * FROM user WHERE username= '$user' AND password='$pass'");
 		$rows = mysqli_num_rows($query);
 		if($rows==1){
+			echo $user;
 			header("Location: welcome.php");
 		}
 		else echo "<script> alert('Wrong Credentials'); window.location.href='index.php'</script>";

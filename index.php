@@ -8,28 +8,9 @@
      <link rel="stylesheet" type="text/css" href="style.css">
       <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-     
-<!--      <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <script src="bootstrap/css/jquery.min.js"></script>
-  <script src="bootstrap/css/bootstrap.min.js"></script>  -->
-    <style>
-  .modal-header, h4, .close {
-      background-color: grey;
-      color:white !important;
-      text-align: center;
-      font-size: 30px;
-  }
-  .modal-footer {
-      background-color: ;
-  }
-  </style>
-
 </head>
-
 <body>
-   
- <div class="container-fluid">   
+<div class="container-fluid">   
 <?php include('functions.php') ;
    nav();
 ?>
@@ -67,8 +48,8 @@ function carousel() {
 </script>
 -->
 <div class="row">
- <div class="col-xs-10 col-xs-offset-1">
-<div class="slideshow">
+ <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">
+<div class="slideshow" style="margin-left:13px; margin-right:13px;" >
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
  
   <ol class="carousel-indicators">
@@ -80,7 +61,7 @@ function carousel() {
   
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="images/1.jpg" style="width:100%; height: 400px; border-radius: 5px;" >
+      <img src="images/1.jpg" style="width:100%; height: 400px; " >
       <div class="carousel-caption">
         <h3></h3>
         <p></p>
@@ -88,7 +69,7 @@ function carousel() {
     </div>
 
     <div class="item">
-      <img  src="images/2.jpg" style="width:100%; height: 400px;border-radius: 5px;">
+      <img  src="images/2.jpg" style="width:100%; height: 400px;">
       <div class="carousel-caption">
         <h3></h3>
         <p></p>
@@ -96,7 +77,7 @@ function carousel() {
     </div>
 
     <div class="item">
-      <img src="images/3.jpg" style="width:100%; height: 400px;border-radius: 5px;;">
+      <img src="images/3.jpg" style="width:100%; height: 400px;">
       <div class="carousel-caption">
         <h3></h3>
         <p></p>
