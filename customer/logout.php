@@ -4,26 +4,25 @@
  <!DOCTYPE html>
  <html>
  <head>
- 	<title></title>
+ 	<title>Log Out</title>
  	 <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="style.css">
-      <script src="bootstrap/js/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="../style.css">
+      <script src="../bootstrap/js/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
  </head>
  <body>
 
     <?php 
-         include('functions.php');
+         include('cust_functions.php');
          nav3();
           unset($_SESSION['user']);
           session_unset();
           session_destroy();
-          
-
-
-     ?>
+           login_modal(); 
+           signup_modal(); 
+    ?>
      <div class="container-fluid">
      <div class="row">
      <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">
@@ -34,8 +33,7 @@
      <div class="col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-5">
      <button id="myBtn2" type="button" class="btn btn-link" style=" margin-top:0px; ;font-weight: bold;color:grey;cursor:pointer;">SIGN UP</button> </div>
      
-     <?php login_modal(); ?> 
-     <?php signup_modal(); ?>
+     
      </div>
     </div>
     </div>

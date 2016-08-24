@@ -63,14 +63,15 @@ function nav2(){
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li style="font-weight:bold; font-style: tahoma;"><a href="index.php">HOME</a></li>
-        <li style="font-weight:bold; font-style: tahoma;"><a href="#">MENU</a></li>
+        <li style="font-weight:bold; font-style: tahoma;"><a href="cust_index.php">HOME</a></li>
+        <li style="font-weight:bold; font-style: tahoma;"><a href="cust_welcome.php">MENU</a></li>
         <li style="font-weight:bold; font-style: tahoma;"><a href="http://yaj22.wordpress.com">BLOG</a></li>
         <li style="font-weight:bold; font-style: tahoma;"><a href="#">ABOUT</a></li>
 
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
+      <li><a class="logout" href="cust_cart.php" style=" font-weight: bold;color:grey;cursor:pointer;">YOUR CART</a></li> 
       <li><a class="logout" href="logout.php" style=" font-weight: bold;color:grey;cursor:pointer;">LOG OUT</a></li> 
       </ul>
       </div>
@@ -112,15 +113,11 @@ function nav3(){
         <li style="font-weight:bold; font-style: tahoma;"><a href="#">ABOUT</a></li>
 
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-      <li><a class="inventory_list" href="inventory_list.php" style=" font-weight: bold;color:grey;cursor:pointer;">Inventory List</a></li>
-      <li><a class="logout" href="../customer/logout.php" style=" font-weight: bold;color:grey;cursor:pointer;">LOG OUT</a></li>
-
-      </ul>
+      
     </div>
   </div>
      
-   </nav>
+   </nav> 
    </div>
    </div>
 
@@ -144,7 +141,7 @@ function login_modal(){
           <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
-          <form role="form" action="customer/process.php" method="POST">
+          <form role="form" action="process.php" method="POST">
             <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
               <input type="text" class="form-control" name="user" id="usrname" placeholder="Enter User Name" autofocus="">
@@ -191,7 +188,7 @@ function signup_modal(){
           <h4><span class="glyphicon glyphicon-lock"></span>  Sign Up</h4>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
-          <form role="form" action="customer/process2.php" method="POST">
+          <form role="form" action="process2.php" method="POST">
             <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
               <input type="text" class="form-control" name="user" id="usrname" placeholder="Enter User Name" autofocus="">

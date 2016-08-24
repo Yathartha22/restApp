@@ -22,14 +22,13 @@ if(isset($_POST['submit'])){
         }
        else
        {
-	   echo "<script> alert('Don\'t Try To Fool'); window.location.href='welcome.php'</script>";
      }  
 	}
 }
 
     $ans=0; 
     $conn = mysqli_connect("localhost","root",'');
-	$db = mysqli_select_db($conn,"login");
+	  $db = mysqli_select_db($conn,"login");
     $query1 = mysqli_query($conn,"UPDATE user SET amount='$value' ");
     $query2 = mysqli_query($conn,"SELECT * FROM admins where adminname='admin' ");
     

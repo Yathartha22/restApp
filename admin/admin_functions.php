@@ -106,14 +106,16 @@ function nav3(){
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li style="font-weight:bold; font-style: tahoma;"><a href="../index.php">HOME</a></li>
-        <li style="font-weight:bold; font-style: tahoma;"><a href="#">MENU</a></li>
+        <li style="font-weight:bold; font-style: tahoma;"><a href="admin_index.php">HOME</a></li>
+        <li style="font-weight:bold; font-style: tahoma;"><a href="admin_welcome.php">MENU</a></li>
         <li style="font-weight:bold; font-style: tahoma;"><a href="http://yaj22.wordpress.com">BLOG</a></li>
         <li style="font-weight:bold; font-style: tahoma;"><a href="#">ABOUT</a></li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      <li><a class="inventory_list" href="inventory_list.php" style=" font-weight: bold;color:grey;cursor:pointer;">Inventory List</a></li>
+      <li><a class="inventory_list" href="inventory_list.php" style=" font-weight: bold;color:grey;cursor:pointer;">INVENTORY LIST</a></li>
+      <li><a class="check_sales" href="adminpage.php" style=" font-weight: bold;color:grey;cursor:pointer;">CHECK SALES</a></li>
+     <li><a class="logout" href="admin_cart.php" style=" font-weight: bold;color:grey;cursor:pointer;">YOUR CART</a></li>
       <li><a class="logout" href="../customer/logout.php" style=" font-weight: bold;color:grey;cursor:pointer;">LOG OUT</a></li>
 
       </ul>
