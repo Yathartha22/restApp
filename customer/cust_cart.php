@@ -127,13 +127,15 @@ if (isset($_POST['submit'])) {
 <!doctype html>
 <html>
 <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Your Cart</title>
-     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="../style.css">
-      <script src="../bootstrap/js/jquery.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Your Cart</title>
+       <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+       <link href="../w3css/w3.css" rel="stylesheet">
+       <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+       <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="../bootstrap/js/jquery.min.js"></script>
+      <script src="../bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -144,7 +146,7 @@ if (isset($_POST['submit'])) {
 
 	<div class="row">
 	<div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">	 
-	 <div class="username" style="text-align:center;" > <?php echo "Welcome "; echo $_SESSION['user']; ?></div>	
+	 <div class="username" style="text-align:center;font-size:17px;color:black;font-weight:bold;" > <?php echo "Hey ";?><i class="fa fa-smile-o icon-large"></i> <span style="color:grey;"><?php echo $_SESSION['user']; ?></span></div>	
      <div style="float:right"><a href="cust_cart.php?cmd=emptycart">CLICK HERE TO EMPTY YOUR CART</a></div>
      <!--  -->
      <br /><br />
@@ -162,17 +164,26 @@ if (isset($_POST['submit'])) {
    </tr>
   </thead>
 
-  <tbody>
-    <?php echo $cartOutput;  ?>
+  <tbody style="font-weight:bold;font-family:cursive;">
+   <?php  echo $cartOutput; ?>
   </tbody>
  	
  </table>
  </div>
  <div class="container-fluid">
   <div class="row">
-   <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">
-  <button style="margin-top:20px;background-color:black;border-color:black;" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Grand Total</button>
- <div  style="margin-top:10px;font-weight:bold;" id="demo" class="collapse"><?php echo "Rs. " .$grand_total; "</h6>"?></div>
+   <div class="col-xs-12 col-xs-offset-1 col-md-12 col-md-offset-9">
+  <div style="margin-top:10px;font-weight:bold;"> <p>Grand Total <i class="fa fa-inr"></i><?php echo " " .$grand_total; "</h6>"?></p>
+ </div>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-xs-12 col-xs-offset-1 col-md-12 col-md-offset-9">
+ <form action="order_confirmation.php">
+ <input type="submit" class="w3-btn w3-black" value="Place Order"  >
+ </form>
+ </div>
+ </div>
  </div>
  </div>
  </div>
@@ -180,17 +191,12 @@ if (isset($_POST['submit'])) {
 }
 else echo "<h2>YOUR FOOD CART IS EMPTY</h2>";
 ?>	
-
-     
-
-
-	<footer>
-      <div class="footer">
-        <p>CopyRight@2016 RestApp</p>
-      </div>
-    </footer>
+<?php footer(); ?>
+ 
     </div>
-    </div>
-    </div>
-</body>
+  </div>
+  </div>
+
+  </body>
+
 </html>

@@ -8,6 +8,8 @@
  	 <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="../w3css/w3.css" rel="stylesheet">
+     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="../style.css">
       <script src="../bootstrap/js/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
@@ -35,6 +37,10 @@
      
      
      </div>
+    </div>
+    <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">
+    <?php footer(); 
+    ?> 
     </div>
     </div>
  </body>

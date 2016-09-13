@@ -1,14 +1,15 @@
 <?php
 function nav(){
-?>
+?> 
+  
    <div class="row"> <div class="col-xs-10 col-xs-offset-1">
        <h1 style="margin-top:-10px; font-weight:bold; font-family:verdana;">REST<span style="color:grey">APP</span></h1>
 </div>
 </div>  
-<div class="row">
- <div class="col-xs-10 col-xs-offset-1">
-      <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+<div class="row" ">
+ <div class="col-xs-10 col-xs-offset-1" >
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid" >
   
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -19,9 +20,9 @@ function nav(){
      <a class="navbar-brand" href="#"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav"  >
         <li style="font-weight:bold; font-style: tahoma;"><a href="index.php">HOME</a></li>
-        <li style="font-weight:bold; font-style: tahoma;"><a href="#">MENU</a></li>
+        <li style="font-weight:bold; font-style: tahoma; cursor:pointer;" onclick="openNav()"><a>MENU</a></li>
         <li style="font-weight:bold; font-style: tahoma;"><a href="http://yaj22.wordpress.com">BLOG</a></li>
         <li style="font-weight:bold; font-style: tahoma;"><a href="#">ABOUT</a></li>
 
@@ -37,6 +38,7 @@ function nav(){
    </nav> 
    </div>
    </div> 
+   
 <?php
 }
 function nav2(){
@@ -227,3 +229,22 @@ $(document).ready(function(){
 </script>
 <?php
 }
+function footer(){
+ ?>
+ <div class="row">
+<div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">
+<div style="margin-top:230px;" class="w3-container w3-teal w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium " style="font-weight:bold;" >
+ <?php echo date("M Y") ?> <i class="fa fa-copyright"></i> RestApp</p>
+</div>
+
+</div>
+
+</div>
+<?php
+} 

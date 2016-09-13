@@ -121,5 +121,6 @@ if (isset($_POST['submit'])) {
     </div>
    </div>
    </div>
+   <?php footer(); ?>
 </body>
 </html>

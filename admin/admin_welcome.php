@@ -74,16 +74,7 @@ session_start();
           event.preventDefault();
          }
        </script> -->
-
-      
-
-     
-     
-  <footer>
-      <div class="footer">
-        <p>CopyRight@2016 RestApp</p>
-      </div>
-    </footer>
+<?php footer(); ?>
     </div>
 </div>
 </body>

@@ -71,7 +71,7 @@ function nav2(){
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-      <li><a class="logout" href="cust_cart.php" style=" font-weight: bold;color:grey;cursor:pointer;">YOUR CART</a></li> 
+      <li><a class="logout" href="cust_cart.php" style=" font-weight: bold;color:grey;cursor:pointer;"><i class="fa fa-cart-plus icon-large"></i> YOUR CART</a></li> 
       <li><a class="logout" href="logout.php" style=" font-weight: bold;color:grey;cursor:pointer;">LOG OUT</a></li> 
       </ul>
       </div>
@@ -222,5 +222,24 @@ $(document).ready(function(){
     });
 });
 </script>
+<?php
+}
+function footer(){ 
+?>
+ <div class="row">
+<div class="col-xs-12 col-xs-offset-1 col-md-12 col-md-offset-0">
+<div style="margin-top:230px;" class="w3-container w3-teal w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium " style="font-weight:bold;" >
+  2016 <i class="fa fa-copyright"></i> RestApp</p>
+</div>
+
+</div>
+
+</div>
 <?php
 }

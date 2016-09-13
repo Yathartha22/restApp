@@ -32,6 +32,6 @@ session_start();
   		$pass= $_POST['pass'];
   	    $query=mysqli_query($conn,"INSERT INTO user VALUES('$user','$pass','0')");
   	    if($query)
-  	     echo "<script>alert('Successfully Registered'); window.location.href='../customer/cust_welcome.php'</script>";
+  	     echo "<script>alert('Successfully Registered'); window.location.href='../customer/cust_index.php'</script>";
   	    } 
  ?>

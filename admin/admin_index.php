@@ -87,15 +87,7 @@ if (isset($_POST['submit'])) {
     <span class="sr-only">Next</span>
   </a>
 </div>
-</div>
-
-
- 
-<footer>
-      <div class="footer">
-        <p>CopyRight@2016 RestApp</p>
-      </div>
-    </footer>
+<?php footer(); ?>
  </div>
   </div>
   </div>

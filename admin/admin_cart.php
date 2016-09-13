@@ -180,15 +180,7 @@ if (isset($_POST['submit'])) {
 }
 else echo "<h2>YOUR FOOD CART IS EMPTY</h2>";
 ?>	
-
-     
-
-
-	<footer>
-      <div class="footer">
-        <p>CopyRight@2016 RestApp</p>
-      </div>
-    </footer>
+<?php footer(); ?>
     </div>
     </div>
     </div>
