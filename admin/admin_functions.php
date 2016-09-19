@@ -232,7 +232,7 @@ $(document).ready(function(){
 function footer(){
  ?>
  <div class="row">
-<div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">
+<div class="col-xs-12 col-xs-offset-1 col-md-12 col-md-offset-0">
 <div style="margin-top:230px;" class="w3-container w3-teal w3-padding-64 w3-center w3-black w3-xlarge">
   <a href="#"><i class="fa fa-facebook-official"></i></a>
   <a href="#"><i class="fa fa-pinterest-p"></i></a>

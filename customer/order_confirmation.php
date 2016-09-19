@@ -1,49 +1,19 @@
 <?php
-session_start();
- ?>
-<?php
-
-$error='';
-if (isset($_POST['submit'])) {
-	if(empty($_POST['user']) || empty($_POST['pass'])){
-		echo  "<script> alert('You Missed Something'); window.location.href='index.php'</script>";
-	}
-	else{
-		$user = $_POST['user'];
-		$pass = $_POST['pass'];
-		$_SESSION['user']=$user;
-		$_SESSION['pass']=$pass;
-
-        if($user == "admin")
-        {
-        	$conn = mysqli_connect("localhost","root","");
-        	$db = mysqli_select_db($conn,'login');
-        	$query = mysqli_query($conn,"SELECT * FROM admins WHERE adminname = '$user' AND adminpass = '$pass' ");
-        	$rows = mysqli_num_rows($query);
-        	if($rows==1){
-        		header("Location: adminpage.php");
-        	}
-        	else{	 
-        		echo "<script> alert('Don\'t Try To Fool'); window.location.href='index.php'</script>";
-        	}
-        }
-        else
-        {
-		$conn = mysqli_connect("localhost","root","");
-		$db = mysqli_select_db($conn,"login");
-		$query = mysqli_query($conn,"SELECT * FROM user WHERE username= '$user' AND password='$pass'");
-		$rows = mysqli_num_rows($query);
-		if($rows==1){
-			echo $user;
-			header("location: ../cust_welcome.php");
-		}
-		else echo "<script> alert('Wrong Credentials'); window.location.href='index.php'</script>";
+  if(isset($_POST['submit'])){
+	$grand_total=$_POST['g_total'];
 		
-	   }
-	   mysqli_close($conn);
-	}
 	
-}
+	$conn = mysqli_connect("localhost","root","");
+     $db = mysqli_select_db($conn,'login');
+     $sql2=mysqli_query($conn, "SELECT * FROM admins WHERE adminname='admin' ");
+     if($sql2){
+     	$row=mysqli_fetch_assoc($sql2);
+        $sum= $row['sales'] + $grand_total;
+     }
+     
+	$sql=mysqli_query($conn,"UPDATE admins SET sales= '$sum' WHERE adminname='admin' ");
+
+ }
 ?>
 <!DOCTYPE html>
 <html>
@@ -61,7 +31,26 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
 <div class="container-fluid">
-	
+	  <div class="row">
+	  	<div class="col-xs-12 col-xs-offset-3 col-md-12 col-xs-offset-3">
+	  		<div class="card" style="width:50%;height:450px;">
+	  			<div class="">
+	  				<h4 style="background-color:black;">THANK YOU FOR YOUR ORDER</h4>
+	  				 <h5 style="text-align:center; font-weight:bold;margin-top:50px;font-size:25px;">Order Number is: XXXXXXXXXXXXXXXXXX</h5>
+	  				 <p style="text-align:center;margin-top:50px;font-weight:bold;font-size:25px;">Total Amount  <i class="fa fa-inr"></i> <?php echo $grand_total;?></p>
+	  				<form>
+	  				    <div class="col-xs-10 col-xs-offset-1 col-md-12 col-md-offset-8" style="margin-top:140px;">
+	  					<input type="submit" name="submit" value="PROCEED TO PAY" class="w3-btn w3-green">
+	  					</div>
+	  					<div class="col-xs-10 col-xs-offset-0 col-md-12 col-md-offset-0 " style="margin-top:-38px;">
+	  					<a href="cust_welcome.php" class="w3-btn w3-green"> << BACK TO MENU </a>
+	  					</div>
+	  				</form>
+
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
 </div>
 </body>
 </html>

@@ -122,7 +122,11 @@ if (isset($_POST['submit'])) {
     $cartOutput .= "</tr>";
     $i++;
    }
+   
+  
 }
+
+
   ?>
 <!doctype html>
 <html>
@@ -169,6 +173,7 @@ if (isset($_POST['submit'])) {
   </tbody>
  	
  </table>
+ 
  </div>
  <div class="container-fluid">
   <div class="row">
@@ -179,8 +184,9 @@ if (isset($_POST['submit'])) {
  </div>
  <div class="row">
  <div class="col-xs-12 col-xs-offset-1 col-md-12 col-md-offset-9">
- <form action="order_confirmation.php">
- <input type="submit" class="w3-btn w3-black" value="Place Order"  >
+ <form action="order_confirmation.php" method="POST">
+ <input type="hidden" name="g_total" value="<?php echo $grand_total ?>" >
+ <input type="submit" name="submit" class="w3-btn w3-black" value="Place Order"  >
  </form>
  </div>
  </div>

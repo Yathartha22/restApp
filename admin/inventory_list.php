@@ -1,4 +1,4 @@
-<?php 
+  <?php 
 session_start();
 if (isset($_POST['submit'])) {
   if(empty($_POST['user']) || empty($_POST['pass'])){
@@ -45,6 +45,8 @@ if (isset($_POST['submit'])) {
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>Welcome</title>
      <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../w3css/w3.css" rel="stylesheet">
+     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="../style.css">
       <script src="../bootstrap/js/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
@@ -57,7 +59,7 @@ if (isset($_POST['submit'])) {
      ?> 
  <div class="row">
   <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1"> 
-   <div class="username" style="text-align:center; margin-bottom: 15px; " > <?php echo "Welcome "; echo $_SESSION['user']; ?></div>
+   <div class="username" style="text-align:center;font-size:17px;color:black;font-weight:bold;" > <?php echo "Hey ";?><i class="fa fa-smile-o icon-large"></i> <span style="color:grey;"><?php echo $_SESSION['user']; ?></span></div>
     <div style="float:right;"><a style="color:black;font-weight:bold;font-family:arial;" href="inventory_list.php#inventoryForm">+ ADD NEW ITEMS</a></div> 
     <a name="inventoryForm" id="inventoryForm"></a>
     <h3>Inventory Form</h3>
@@ -121,6 +123,8 @@ if (isset($_POST['submit'])) {
     </div>
    </div>
    </div>
-   <?php footer(); ?>
+    <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1"> 
+ <?php footer(); ?>
+ </div> 
 </body>
 </html>
